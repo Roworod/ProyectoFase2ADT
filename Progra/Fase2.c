@@ -22,16 +22,22 @@ int main()                                    // Main function
      derecha=input(2);      //la senal infrarojo derecha esta en el pin 2
      freqout(1,1,38000);
      izquierda=input(10);   //la senal infrarrojo izquierda esta en el pin 10
+               
+    if(derecha!=0){
+        caminarParaGiro();
+        girarDerecha(); 
+        caminarParaGiro();      
+      }        
+        
+    if(derecha==0 && frente>7)
+        caminarFrente();
+        
+    if(derecha==0 && frente<7)
+        girarIzquierda();
+
     
-    do{
-      caminarFrente();
-     }while(derecha!=0);
-     
-     girarDerecha();
-     caminarFrente();
-     
-     if(frente<7 && derecha==0)
-        girarIzquierda();    
+       
   }
-  
+
+
 }

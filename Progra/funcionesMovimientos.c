@@ -13,12 +13,17 @@ void girarDerecha(){
   }
   
 void girarIzquierda(){
-    drive_goto(-26,26);  
-  }
+    drive_goto(-26,26);
+    }
   
 void caminarFrente(){
-    drive_goto(15,15);
+    drive_ramp(25,25);
   }
+  
+void caminarParaGiro(){
+    drive_goto(25,25);
+  }
+  
   
 void voltearse(){
     drive_goto(52,-52);
