@@ -9,11 +9,11 @@
 #include "ping.h"
 
 void girarDerecha(){
-    drive_goto(26,-26);
+    drive_goto(25,-25);
   }
   
 void girarIzquierda(){
-    drive_goto(-26,26);
+    drive_goto(-25,25);
     }
   
 void caminarFrente(){
@@ -21,12 +21,12 @@ void caminarFrente(){
   }
   
 void caminarParaGiro(){
-    drive_goto(25,25);
+    drive_goto(30,30);
   }
   
   
 void voltearse(){
-    drive_goto(52,-52);
+    drive_goto(50,-50);
   }
   
  int paredFrente(){

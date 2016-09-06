@@ -16,28 +16,29 @@ int main()                                    // Main function
      
   while(1)
   {
-    
+
      frente=ping_cm(8);
      freqout(1,1,38000);
      derecha=input(2);      //la senal infrarojo derecha esta en el pin 2
-     freqout(1,1,38000);
+     freqout(11,1,38000);
      izquierda=input(10);   //la senal infrarrojo izquierda esta en el pin 10
+      
                
     if(derecha!=0){
         caminarParaGiro();
         girarDerecha(); 
-        caminarParaGiro();      
+        caminarParaGiro();
+                      
       }        
         
-    if(derecha==0 && frente>7)
+    else if(derecha==0 && frente>7)
         caminarFrente();
         
-    if(derecha==0 && frente<7)
+    else
         girarIzquierda();
 
-    
-       
-  }
+      }        
+  
 
 
 }
