@@ -20,9 +20,9 @@ int main()                                    // Main function
       int izquierda;
       
      
+  //Cantidades de movimiento y correccion de giro
   while(1)
   {
-
      frente=ping_cm(8);
      freqout(1,1,38000);
      derecha=input(2);      //la senal infrarojo derecha esta en el pin 2
