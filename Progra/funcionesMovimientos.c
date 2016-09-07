@@ -1,13 +1,15 @@
 //Header de funciones para moverse
 //Authors: Robbin Woods 15201
-//         Dieter de Witt 15algo
-//         Gerardo Cardoza 15410
+//Dieter de Witt 15146
+//Gerardo Cardoza 15410
 //version:1.0
 
+//Librerias de C para Paralax
 #include "simpletools.h"
 #include "abdrive.h"
 #include "ping.h"
 
+//Funciones de movimeinto con cantidades y correccion
 void girarDerecha(){
     drive_goto(25,-25);
   }
