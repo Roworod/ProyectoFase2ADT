@@ -31,6 +31,7 @@ void voltearse(){
     drive_goto(50,-50);
   }
   
+//Funciones que utilizan los sensores para detectar paredes 
  int paredFrente(){
         int frente= ping_cm(8);   //la senal se recibe en el pin 8;
         return frente;
