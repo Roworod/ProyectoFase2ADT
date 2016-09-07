@@ -1,15 +1,13 @@
 //Header de funciones para moverse
 //Authors: Robbin Woods 15201
-//Dieter de Witt 15146
-//Gerardo Cardoza 15410
+//         Dieter de Witt 15algo
+//         Gerardo Cardoza 15410
 //version:1.0
 
-//Librerias de C para Paralax
 #include "simpletools.h"
 #include "abdrive.h"
 #include "ping.h"
 
-//Funciones de movimeinto con cantidades y correccion
 void girarDerecha(){
     drive_goto(25,-25);
   }
@@ -31,7 +29,6 @@ void voltearse(){
     drive_goto(50,-50);
   }
   
-//Funciones que utilizan los sensores para detectar paredes 
  int paredFrente(){
         int frente= ping_cm(8);   //la senal se recibe en el pin 8;
         return frente;
