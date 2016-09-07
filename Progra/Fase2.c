@@ -2,6 +2,12 @@
   Blank Simple Project.c
   http://learn.parallax.com/propeller-c-tutorials 
 */
+//Programa principal que utiliza las funciones de movimiento para crear el algoritmo
+//Authors: Robbin Woods 15201
+//Dieter de Witt 15146
+//Gerardo Cardoza 15410
+
+
 #include "simpletools.h"                      // Include simple tools
 #include "ping.h"
 #include "abdrive.h"
@@ -38,7 +44,4 @@ int main()                                    // Main function
         girarIzquierda();
 
       }        
-  
-
-
 }
